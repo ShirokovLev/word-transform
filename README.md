@@ -82,29 +82,50 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 `$ npm install`
 ## Структура
 `./src` - рабочая директория. Все исходные файлы лежат здесь
+
 `./dist` - директория, в которую попадает собранный проект. Сюда смотрит локальный сервер по адресу `http://localhost:3000`
+
 `./gulp-task` - файлы, отвечающие за сборку проекта
+
 `./node-modules` - node пакеты (https://docs.npmjs.com/about-packages-and-modules)
+
 ### Ассеты
 `./src/assets` - статичные файлы
+
 `./src/assets/fonts` - шрифты
+
 `./src/assets/icons` - svg иконки. Cобираются в спрайт `dist/assets/icons/sprite.svg`
+
 `./src/assets/img` - растровые изображения(jpg, png, webp)
+
 ### Компоненты
 `./src/components/` - директория с компонентами, из которых собирается итоговая страница. 
+
 `./src/components/component-name/component-name.html` - файл с разметкой компонента. Подключается в `src/index.js` следующим образом: `@@include("./components/compnonent-name/compnonent-name.html")`
+
 `./src/components/component-name/component-name.scss` - файл со стилями компонента. Подключается в `src/components/components.scss.scss` следующим образом: `@import 'component-name/component-name';`
+
 ### Скрипты
 `./src/js/scripts.js` - весь js тут. Рекомендуется опираться на ES6+ стандарты. Собранный, минифицированный файл попадает в `./dist/js/scripts.min.js`
+
 ### Файлы с побочными стилями
 `./src/styles/scss/helpers/_variables.scss` - здесь хранятся переменные шрифтов и цветов, для использования в scss-файлах (https://sass-lang.com/documentation/variables)
+
 `./src/styles/scss/helpers/_mixins.scss` - здесь лежат миксины (https://sass-lang.com/documentation/at-rules/mixin)
+
 `./src/styles/scss/helpers/_variables.scss` - здесь хранятся значения ширины основных используемых устройств и миксины для медиа-запросов
+
 `./src/styles/scss/_btn.scss` - тут описаны компоненты кнопок
+
 `./src/styles/scss/_link.scss` - тут описаны компоненты ссылок
+
 `./src/styles/scss/styles.scss` - файл, в который импортируются стили компонентов, побочные файлы
+
 ## Запуск
 `npm run build:build` - сборка проекта
+
 `npm run build:run` - сборка проекта и дальнейший запуск на локальном сервере (http://localhost:3000)
+
+
 
 
